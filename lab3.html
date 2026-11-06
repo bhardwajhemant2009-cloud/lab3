@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<!-- saved from url=(0082)file:///C:/Users/beeme/AppData/Local/Temp/Rar$EXa0.836/hemant_portfolio/index.html -->
+<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Hemant | My Portfolio</title>
+  <style>
+    * { margin: 0; padding: 0; box-sizing: border-box; font-family: Arial, sans-serif; }
+    html { scroll-behavior: smooth; }
+    body { background: #f4f4f4; color: #333; }
+    header {
+      background: #0750ad; color: white; padding: 14px 5%;
+      display: flex; justify-content: space-between; align-items: center;
+    }
+    header h3 { font-size: 20px; }
+    nav a { color: white; text-decoration: none; margin-left: 18px; font-size: 13px; }
+    nav a:hover { color: #ff7056; }
+    .hero {
+      display: flex; justify-content: space-between; align-items: center;
+      gap: 30px; padding: 55px 5%;
+    }
+    .hero h1 { font-size: 44px; margin-bottom: 12px; }
+    .hero h2 { font-size: 36px; color: #ff7056; margin-bottom: 16px; }
+    .hero p { font-size: 14px; color: #777; }
+    .profile {
+      width: 210px; height: 210px; flex-shrink: 0; border-radius: 50%;
+      background: #c9e0ff; display: flex; align-items: center; justify-content: center;
+      overflow: hidden;
+    }
+    .profile svg { width: 90%; height: 90%; }
+    section { padding: 18px 5%; scroll-margin-top: 15px; }
+    section h2 { font-size: 24px; margin-bottom: 15px; }
+    .about p { font-size: 13px; line-height: 1.6; color: #666; }
+    .skills-container { display: flex; gap: 18px; }
+    .skill {
+      flex: 1; background: #0750ad; color: white; padding: 16px;
+      text-align: center; border-radius: 5px; font-size: 14px;
+    }
+    .skill span { display: block; margin-top: 5px; font-size: 12px; }
+    .projects-container { width: 65%; margin: auto; }
+    .project {
+      display: block; color: inherit; text-decoration: none; background: white;
+      border: 1px solid #ddd; border-radius: 5px; padding: 30px 16px;
+      text-align: center; margin-bottom: 18px; min-height: 125px;
+      transition: transform .2s, box-shadow .2s;
+    }
+    .project:hover { transform: translateY(-3px); box-shadow: 0 4px 12px #00000018; }
+    .project h3 { font-size: 16px; margin-bottom: 8px; color: #0750ad; }
+    .project p { font-size: 12px; color: #777; margin-bottom: 10px; }
+    .project .open-link { font-size: 12px; color: #0750ad; text-decoration: underline; }
+    .contact-container {
+      width: 350px; max-width: 100%; margin: auto; background: white;
+      padding: 22px; border-radius: 6px; box-shadow: 0 2px 8px #00000012;
+    }
+    label { display: block; font-size: 12px; margin: 8px 0 5px; }
+    input, textarea {
+      width: 100%; padding: 9px; border: 1px solid #aaa; border-radius: 3px;
+      font-size: 13px; outline-color: #0750ad;
+    }
+    textarea { min-height: 65px; resize: vertical; }
+    button {
+      width: 100%; margin-top: 12px; padding: 10px; background: #0750ad;
+      color: white; border: 0; border-radius: 3px; cursor: pointer;
+    }
+    button:hover { background: #ff7056; }
+    #form-message { margin-top: 10px; font-size: 12px; color: green; }
+    footer { background: #0750ad; color: white; text-align: center; padding: 13px; font-size: 12px; }
+    .top-button {
+      position: fixed; bottom: 18px; right: 18px; width: auto;
+      padding: 10px 13px; font-size: 12px;
+    }
+    @media (max-width: 650px) {
+      header { flex-direction: column; gap: 12px; }
+      nav a { margin: 0 7px; }
+      .hero { flex-direction: column-reverse; text-align: center; padding: 35px 5%; }
+      .hero h1 { font-size: 34px; }
+      .hero h2 { font-size: 28px; }
+      .profile { width: 170px; height: 170px; }
+      .skills-container { flex-direction: column; gap: 10px; }
+      .projects-container { width: 100%; }
+    }
+  </style>
+</head>
+<body id="top">
+  <header>
+    <h3>My Portfolio</h3>
+    <nav>
+      <a href="file:///C:/Users/beeme/AppData/Local/Temp/Rar$EXa0.836/hemant_portfolio/index.html#about">About</a>
+      <a href="file:///C:/Users/beeme/AppData/Local/Temp/Rar$EXa0.836/hemant_portfolio/index.html#skills">Skills</a>
+      <a href="file:///C:/Users/beeme/AppData/Local/Temp/Rar$EXa0.836/hemant_portfolio/index.html#projects">Projects</a>
+      <a href="file:///C:/Users/beeme/AppData/Local/Temp/Rar$EXa0.836/hemant_portfolio/index.html#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <div class="hero">
+      <div>
+        <h1>Hi, I am Hemant</h1>
+        <h2>Full Stack Developer</h2>
+        <p>Building modern web applications with HTML, CSS and JavaScript.</p>
+      </div>
+      <div class="profile" aria-label="Profile illustration">
+        <svg viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Illustration of a person">
+          <path d="M20 200 Q25 128 100 128 Q175 128 180 200" fill="#386b91"></path>
+          <path d="M75 128 L100 158 L125 128" fill="#fff"></path>
+          <path d="M90 143 L100 174 L110 143" fill="#ef6476"></path>
+          <rect x="86" y="103" width="28" height="36" fill="#f5bda7"></rect>
+          <circle cx="100" cy="73" r="42" fill="#ffd0b9"></circle>
+          <path d="M58 75 Q50 20 105 25 Q155 25 142 90 L130 65 L125 45 Q90 60 60 50Z" fill="#315b78"></path>
+          <path d="M65 112 L45 145 L75 165 L100 145Z" fill="#315b78"></path>
+          <path d="M135 112 L155 145 L125 165 L100 145Z" fill="#315b78"></path>
+        </svg>
+      </div>
+    </div>
+
+    <section class="about" id="about">
+      <h2>About Me</h2>
+      <p>Hello! My name is Hemant. I am learning web development and enjoy creating websites using HTML, CSS and JavaScript. This portfolio showcases my skills and the projects I have worked on while learning.</p>
+    </section>
+
+    <section id="skills">
+      <h2>My Skills</h2>
+      <div class="skills-container">
+        <div class="skill"><b>HTML</b><span>Beginner</span></div>
+        <div class="skill"><b>CSS</b><span>Beginner</span></div>
+        <div class="skill"><b>JavaScript</b><span>Learning</span></div>
+      </div>
+    </section>
+
+    <section id="projects">
+      <h2>My Projects</h2>
+      <div class="projects-container">
+        <a class="project" href="file:///C:/Users/beeme/AppData/Local/Temp/Rar$EXa0.836/hemant_portfolio/assignment1.html" target="_blank" rel="noopener">
+          <h3>Project 1 – Personal Portfolio Website</h3>
+          <p>A semantic HTML portfolio page with About, Projects, Skills and Contact sections.</p>
+          <span class="open-link">Open Project 1</span>
+        </a>
+        <a class="project" href="file:///C:/Users/beeme/AppData/Local/Temp/Rar$EXa0.836/hemant_portfolio/assignment2.html" target="_blank" rel="noopener">
+          <h3>Project 2 – Styled Portfolio Website</h3>
+          <p>A responsive portfolio webpage using CSS styling, a skills table and a contact form.</p>
+          <span class="open-link">Open Project 2</span>
+        </a>
+      </div>
+    </section>
+
+    <section id="contact">
+      <h2>Contact Me</h2>
+      <div class="contact-container">
+        <form id="contactForm">
+          <label for="name">Name</label>
+          <input type="text" id="name" placeholder="Enter your name" required="">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="Enter your email" required="">
+          <label for="userMessage">Message</label>
+          <textarea id="userMessage" placeholder="Write your message" required=""></textarea>
+          <button type="submit">Send</button>
+          <p id="form-message"></p>
+        </form>
+      </div>
+    </section>
+  </main>
+
+  <footer>© 2026 Hemant. All rights reserved.</footer>
+  <button class="top-button" onclick="window.scrollTo({top: 0, behavior: 'smooth'})">↑ Back to Top</button>
+
+  <script>
+    document.getElementById("contactForm").addEventListener("submit", function(event) {
+      event.preventDefault();
+      const visitorName = document.getElementById("name").value.trim();
+      document.getElementById("form-message").textContent =
+        "Thank you, " + visitorName + "! Your message has been received.";
+      this.reset();
+    });
+  </script>
+
+
+</body></html>
